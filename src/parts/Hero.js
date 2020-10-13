@@ -16,7 +16,7 @@ export default function Hero(props) {
         window.scrollTo({
             top: props.refMostPicked.current.offsetTop - 30,
             behavior: "smooth"
-        })
+        });
     }
 
     return (
@@ -32,7 +32,7 @@ export default function Hero(props) {
                         holiday with family, Time to make another
                         memorable moments.
                     </p>
-                    <Button className="btn px-5" hasShadow isPrimary onclick={showMostPicked}>
+                    <Button className="btn px-5" hasShadow isPrimary onClick={showMostPicked}>
                         Show Me Now
                     </Button>
 
